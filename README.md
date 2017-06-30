@@ -1,4 +1,13 @@
 # Estudo de Flex-box
+
+* [Introdução](#introdução)
+  * [O que é flex-box?](#o-que-é-flex-box)
+  * [Como ele funciona?](#como-ele-funciona)
+  * [Declaração](#declaração)
+* [Utilização](#utilização)
+  * [Linha ou coluna](#linha-ou-coluna)
+
+
 ---
 
 ## Introdução
@@ -40,6 +49,23 @@ Basicamente as propriedades do flexbox são adicionadas no elemento pai para que
 
 [Exemplo](https://codepen.io/tunadao1/pen/weyrQQ "Exemplo no Codepen")
 
-### Utilização
+## Utilização
 
-Suponho que você já tenha lido a introdução, se não leia clicando [aqui](#introdução)
+Suponho que você já tenha lido a introdução e saiba o que é flexbox e como declara-lo no seu css, se não leia clicando [aqui](#introdução).
+
+### Linha ou Coluna
+
+A propriedade flexbox por padrão posiciona os seus elementos filhos em linha *(Um ao lado do outro)* . Porém em muitas situações precisamos que um elemento fique um abaixo do outro. Para isso usamos a propriedade **flex-direction** e definimos em qual direção o flexbox deve posicionar os elementos. Abaixo um exemplo de declaração:
+
+```css
+.pai {
+  /* Definindo que o conteúdo será flexível */
+  display: flex;
+  
+  /* Posicinado em coluna */
+  flex-direction: column;
+  
+  /* Posicinado em linha */
+  flex-direction: row
+}
+```
