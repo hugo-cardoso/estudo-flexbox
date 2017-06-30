@@ -6,6 +6,7 @@
   * [Declaração](#declaração)
 * [Utilização](#utilização)
   * [Linha ou coluna](#linha-ou-coluna)
+  * [Alinhamento](#alinhamento)
 
 
 ---
@@ -27,6 +28,7 @@ Basicamente as propriedades do flexbox são adicionadas no elemento pai para que
 **CSS**
 ```css
 .pai {
+  /* Definindo que o conteúdo será flexível */
   display: flex;
  }
  
@@ -55,17 +57,46 @@ Suponho que você já tenha lido a introdução e saiba o que é flexbox e como 
 
 ### Linha ou Coluna
 
-A propriedade flexbox por padrão posiciona os seus elementos filhos em linha *(Um ao lado do outro)* . Porém em muitas situações precisamos que um elemento fique um abaixo do outro. Para isso usamos a propriedade **flex-direction** e definimos em qual direção o flexbox deve posicionar os elementos. Abaixo um exemplo de declaração:
+A propriedade flexbox por padrão posiciona os seus elementos filhos em linha *(Um ao lado do outro)* . Porém em muitas situações precisamos que um elemento fique um abaixo do outro. Para isso usamos a propriedade **flex-direction** e definimos em qual direção o flexbox deve posicionar os elementos. Abaixo o exemplo de declaração:
 
 ```css
 .pai {
   /* Definindo que o conteúdo será flexível */
   display: flex;
   
-  /* Posicinado em coluna */
+  /* Posicionado em coluna */
   flex-direction: column;
   
-  /* Posicinado em linha */
-  flex-direction: row
+  /* Posicionado em linha */
+  flex-direction: row;
 }
 ```
+É possível posicionar os elementos em ordem reversa, na estrutura HTML a ordem é 1 2 3 4 e o flexbox irá inverter para 4 3 2 1. Abaixo o exemplo de declaração:
+
+```css
+.pai {
+  /* Definindo que o conteúdo será flexível */
+  display: flex;
+  
+  /* Posicionado em coluna e em ordem reversa */
+  flex-direction: column-reverse;
+  
+  /* Posicionado em linha e em ordem reversa */
+  flex-direction: row-reverse;
+}
+```
+
+### Alinhamento
+
+É possível posicionar os elementos de forma muito dinâmica com o uso da propriedade **justify-content** . Um exemplo bom do poder do flexbox é definindo que o justify-content será **space-between** *(entre os elementos)* . Abaixo o exemplo de declaração:
+
+```css
+.pai {
+  /* Definindo que o conteúdo será flexível */
+  display: flex;
+  
+  /* Definindo que o espaço entre os elementos será flexível */
+  justify-content: space-between;
+}
+```
+[Exemplo](https://codepen.io/tunadao1/pen/ZyrajK "Exemplo no Codepen")
