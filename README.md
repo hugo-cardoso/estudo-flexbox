@@ -4,6 +4,7 @@
   * [O que é flex-box?](#o-que-é-flex-box)
   * [Como ele funciona?](#como-ele-funciona)
   * [Declaração](#declaração)
+  * [Compatibilidade](#compatibilidade)
 * [Utilização](#utilização)
   * [Linha ou coluna](#linha-ou-coluna)
   * [Alinhamento](#alinhamento)
