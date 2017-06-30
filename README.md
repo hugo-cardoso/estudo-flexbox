@@ -15,15 +15,15 @@
 
 ### O que é flex-box?
 
-O CSS **Flexible Box Layout Model** ou para os mais intimos **Flexbox**, faz parte da especificação do CSS3 que pretende organizar elementos na página sem o uso do nosso querido **float** *(ironia)* e também resolve mais alguns problemas que temos atualmente em relação ao tamanho dos elementos, onde apelamos para o **box-sizing"**.
+O CSS **Flexible Box Layout Model** ou para os mais intimos **Flexbox**, faz parte da especificação do CSS3 que começou a ser discutida em 2009, ela pretende organizar elementos na página sem o uso do nosso querido **float** *(ironia)* e também resolve mais alguns problemas que temos atualmente em relação ao tamanho dos elementos, onde apelamos para o **box-sizing"**.
 
 ### Como ele funciona?
 
-Os filhos de um elemento com a propriedade **flexbox** podem se posicionados em qualquer direção e se necessário podem ter tamanhos flexíveis para se adaptar. Um dos problemas do float é a sua dependência com os demais elementos na estrutura do HTML, os elementos devem estar em uma direção específica ou o layout irá quebrar. Com o uso do flexbox não precisamos nos preocupar com isso, os elementos irão se ajustar ao layout dinamicamente.
+Os filhos de um elemento com a propriedade **flexbox** podem se posicionados em qualquer direção e se necessário podem ter tamanhos flexíveis para se adaptar uns aos outros. Um dos maiores problemas do float é a sua dependência com os demais elementos na estrutura do HTML, os elementos devem estar em uma direção específica ou o layout irá quebrar. Com o uso do flexbox não precisamos nos preocupar com isso, os elementos irão se ajustar ao layout dinamicamente.
 
 ### Declaração
 
-Basicamente as propriedades do flexbox são adicionadas no elemento pai para que os filhos sejam afetados.
+As propriedades do flexbox devem ser adicionadas no elemento pai para que os filhos sejam afetados.
 
 **CSS**
 ```css
@@ -50,6 +50,16 @@ Basicamente as propriedades do flexbox são adicionadas no elemento pai para que
 ```
 
 [Exemplo](https://codepen.io/tunadao1/pen/weyrQQ "Exemplo no Codepen")
+
+### Compatibilidade
+
+Grande parte dos navegadores já suportam o flexbox sem o uso de prefix, abaixo uma tabela dos principais:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ## Utilização
 
