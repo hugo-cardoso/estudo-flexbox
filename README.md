@@ -55,11 +55,9 @@ As propriedades do flexbox devem ser adicionadas no elemento pai para que os fil
 
 Grande parte dos navegadores já suportam o flexbox sem o uso de prefix, abaixo uma tabela dos principais:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Chrome  |  Safari | Firefox |  IE10  |
+|:-------:|:-------:|:-------:|:------:|
+| ![](res/thumb-up.png) | ![](res/thumb-up.png) | ![](res/thumb-up.png) | ![](res/thumb-up-.png) |
 
 ## Utilização
 
